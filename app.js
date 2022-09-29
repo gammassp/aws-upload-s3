@@ -1,12 +1,13 @@
  var bucket = new AWS.S3({
-   accessKeyId: "ACCESS_KEY",
-   secretAccessKey: "SECRET_KEY",
+   accessKeyId: "ACCESS_KEY", //update your access key
+   secretAccessKey: "SECRET_KEY", //update your secret key
    region: 'ap-southeast-1'
  });
 
  uploadfile = function(fileName, file, folderName) {
    const params = {
-     Bucket: "BUCKET_NAME",
+     Bucket: "BUCKET_NAME", //update your bucket name
+     ACL: "public-read",
      Key: folderName + fileName,
      Body: file,
      ContentType: file.type
@@ -27,8 +28,8 @@
    progressDiv.style.display="block";
    var progressBar = document.getElementById("myBar");
    file = document.getElementById("myFile").files[0];
-   folderName = "Document/";
-   uniqueFileName = 'SampleFile.mp4'; 
+   folderName = "Document/"; //update your path
+   uniqueFileName = 'SampleFile.mp4';  //update your file name
    let fileUpload = {
      id: "",
      name: file.name,
