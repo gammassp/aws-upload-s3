@@ -5,7 +5,7 @@ AWS S3 file upload with progress bar
 1. File Upload 
 2. Progress bar
 
-<strong>Note:</strong> us-east-1 is the default AWS region setting.
+<strong>Note:</strong> ap-southeast-1 is the default AWS region setting.
 
 Make sure your AWS S3 CORS settings for your bucket look something like this:
 ```json
@@ -29,9 +29,7 @@ Make sure your AWS S3 CORS settings for your bucket look something like this:
         ]
     }
 ]
-
-## Usage
-
+```
 
 ## Reference : 
 https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-photo-album.html
