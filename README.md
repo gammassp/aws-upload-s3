@@ -39,13 +39,17 @@ Go to your bucket, into the Permissions tab, find Object Ownership and click Edi
 Set Block new public ACLs and uploading public objects to false
 
 ## Usage
-index.html
+**index.html**
+```html
 HTML upload form
+```
 
-style.css
-Style for progress bar
+**style.css**
+```css
+Style for uploading progress bars
+```
 
-app.js
+**app.js**
 ```javascript
 accessKeyId: "ACCESS_KEY", //update your access key
 secretAccessKey: "SECRET_KEY", //update your secret key
