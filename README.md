@@ -38,5 +38,21 @@ Go to your bucket, into the Permissions tab, find Object Ownership and click Edi
 ## Allow public access
 Set Block new public ACLs and uploading public objects to false
 
+## Usage
+index.html
+HTML upload form
+
+style.css
+Style for progress bar
+
+app.js
+```javascript
+accessKeyId: "ACCESS_KEY", //update your access key
+secretAccessKey: "SECRET_KEY", //update your secret key
+Bucket: "BUCKET_NAME", //update your bucket name
+folderName = "Document/"; //update your prefix path
+uniqueFileName = 'SampleFile.mp4';  //update your file name
+```
+   
 ## Reference : 
 https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-photo-album.html
